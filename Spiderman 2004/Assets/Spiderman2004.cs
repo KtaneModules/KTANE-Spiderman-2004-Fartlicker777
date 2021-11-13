@@ -50,6 +50,7 @@ public class Spiderman2004 : MonoBehaviour {
       Beeg.AddInteractionPunch();
       GetComponent<KMAudio>().PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, Beeg.transform);
       clicks++;
+      Audio.PlaySoundAtTransform("Pizza Time", Beeg.transform);
       Debug.LogFormat("[Spiderman 2004 #{0}] {1}", ModuleId, clicks);
       if (clicks == 2004) {
          GetComponent<KMBombModule>().HandlePass();
@@ -61,9 +62,15 @@ public class Spiderman2004 : MonoBehaviour {
    }
 
    void Update () {
+      if (Input.GetKeyDown(KeyCode.ScrollLock)) {
+         BeegPress();
+      }
       if (SoundIThink != null && !focused && !highlighted) {
          SoundIThink.StopSound();
          SoundIThink = null;
+      }
+      if (SoundIThink == null && (focused || highlighted)) {
+         MusicStarter();
       }
    }
 
@@ -78,6 +85,7 @@ public class Spiderman2004 : MonoBehaviour {
          Beeg.OnInteract();
       }
       else {
+         clicks = 0;
          yield return "sendtochaterror Big mistake fucko.";
       }
    }
