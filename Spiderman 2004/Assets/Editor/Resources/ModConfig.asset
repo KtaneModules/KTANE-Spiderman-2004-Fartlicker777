@@ -20,10 +20,9 @@ MonoBehaviour:
     as a result. The game is the sequel to Spider-Man (2002), itself based on the
     film of the same name. The Treyarch-developed versions are considered a landmark
     title in the industry for being the first superhero video game to incorporate
-    a full open world design.\r\n\nKeyboard Supported, not Mac Supported.\n\nMade
-    by Deaf, maintained by Jon.\n\nManual can be found at ktane.timwi.de or in the
-    manuals folder of your game.\n\nIf there are any bugs, contact aGood_Usernam3#1518
-    on Discord."
+    a full open world design.\r\n\r\nCarpal Tunnel Supported, not Mac Supported.\r\n\r\nManual
+    can be found at ktane.timwi.de or in the manuals folder of your game.\r\n\r\nIf
+    there are any bugs, Better Call Saul!\r"
   version: 
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 0061c863cabfc794db6b1e3bf6e9c336, type: 3}

@@ -691,7 +691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ModuleType: Spiderman2004
-  ModuleDisplayName: "Spiderman 2004 \u2122"
+  ModuleDisplayName: Spiderman 2004
   RequiresTimerVisibility: 0
 --- !u!114 &114907837735438752
 MonoBehaviour:
